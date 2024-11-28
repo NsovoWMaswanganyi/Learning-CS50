@@ -1,3 +1,4 @@
+/*Nsovo W. Maswanganyi*/
 body,.header, .buttons, .images{
     background-color: black;
 }
@@ -23,7 +24,7 @@ h1{
 }
 
 .body{
-    /* margin:20px; */
+    
     margin-top: 10px;
     background-color: greenyellow;
     padding: 20px;
