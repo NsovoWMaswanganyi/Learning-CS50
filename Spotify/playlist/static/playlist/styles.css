@@ -1,0 +1,49 @@
+body,.header, .buttons, .images{
+    background-color: black;
+}
+
+.images{
+    height: 25px;
+}
+
+.songs{
+    background-color: steelblue;
+    height: 40px;
+    margin: 10px;
+}
+
+#home{
+    border-radius: 27px;
+}
+
+h1{
+    font-family: sans-serif,Arial;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.body{
+    /* margin:20px; */
+    margin-top: 10px;
+    background-color: greenyellow;
+    padding: 20px;
+}
+
+div > .songs{
+    border: 10px;
+    background-color: aquamarine;
+}
+
+.premium{
+    background-color: whitesmoke;
+    font-family: sans-serif,Arial;
+    size: 100px;
+    border-radius: 10px;
+}
+
+.install{
+    background-color: whitesmoke;
+    font-family: sans-serif,Arial;
+    size: 10px;
+    border-radius: 10px;
+}

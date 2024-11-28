@@ -1,0 +1,15 @@
+{%extends "playlist/layout.html"%}
+
+{%block body%}
+<div class="body">
+    <form action="{%url 'playlist:add'%}" method="post">
+        {%csrf_token%}
+        {{form}}
+        <input type="submit">
+    
+    </form>
+    <a href="{% url 'playlist:index'%}">View All Songs</a>
+
+</div>
+
+{%endblock%}

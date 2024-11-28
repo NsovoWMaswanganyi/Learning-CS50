@@ -1,0 +1,48 @@
+
+{%extends "playlist/layout.html"%}
+{%load static%}
+
+{%block body%}
+<body>
+    
+    <div class="header">
+        <div class="images" align="left">
+            <img id="logo" src="{%static 'playlist/logo.png'%}" alt="logo" height="50" width="50"> 
+            <img id="home" src="{%static 'playlist/home.png'%}" alt="home" height="50" width="50">
+        </div>
+
+        <div class="buttons" align="right">
+            <button class="premium" >Explore Premium</button>
+            <button class="install">Install App</button>
+            
+        </div>
+
+    </div>
+
+    <div class="body">
+        <img src="{%static 'playlist/orchestra.png'%}" height="150px" width="150px">
+        <h1 align="center">Orchestra</h1>
+        
+        
+            <ol>
+                
+                {% for song in playlist%}
+                <div class="songs">
+                    <li>{{song}}</li>
+
+                </div>
+                {%empty%}
+                <li>No songs yet</li>
+                {%endfor%}
+                
+            </ol>
+        
+        <a href="{%url 'playlist:add'%}">
+            <img src="{%static 'playlist/add.png'%}" height="50px" width="50px" style="border-radius: 27px;">
+        </a>
+        
+    </div>
+
+</body>
+
+{%endblock%}
