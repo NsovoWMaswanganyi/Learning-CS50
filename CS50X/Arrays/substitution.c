@@ -27,7 +27,12 @@ int main(int argc, string argv[])
         string key = argv[1];
 
         int keyLen = strlen(key);
-
+        
+        if(keyLen != 26)
+        {
+            printf("Key must contain 26 characters.\n");
+            return 1; //Error exit status
+        }
         for(int i = 0; i < keyLen; i++)
         {
             if(!(isalpha(argv[1][i])))
@@ -45,13 +50,7 @@ int main(int argc, string argv[])
                 }
             }
         }
-
-        if(keyLen != 26)
-        {
-            printf("Key must contain 26 characters.\n");
-            return 1; //Error exit status
-        }
-        else if(!valid)
+        if(!valid)
         {
             printf("Key contains invalid characters\n");
             return 1;
