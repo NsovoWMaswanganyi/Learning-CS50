@@ -1,5 +1,5 @@
 //Nsovo W. Maswanganyi
-//Finished
+//Exit 0
 #include <cs50.h>
 #include <stdio.h>
 
